@@ -6,13 +6,13 @@ const transporter = nodemailer.createTransport(smtpTransport({
 	service : 'gmail', 
 	host : 'smtp.gmail.com',
 	auth :{
-		user : 'mcw0219Dev@gmail.com',
+		user : 'leescvsir@gmail.com',
 		pass : process.env.mail_pass
 	}
 }));
 
 const mailOptions = {
-	from : 'mcw0219Dev@gmail.com',
+	from : 'leescvsir@gmail.com',
 	to : getReceiverList(),
 	subject : 'Nike The Draw!',
 	html : getMailData()
