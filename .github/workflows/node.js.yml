@@ -45,7 +45,7 @@ jobs:
         echo "current_date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
         
     - name: Commit & Push
-      uses: Andro999b/push@v1.3
+      uses: leelang7/push@v1.3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
